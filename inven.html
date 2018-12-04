@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>คลังสินค้า</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/50.png" type="image/png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+A:link	{
+text-decoration:none;
+}
+A:visited	{
+text-decoration:none;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top" >
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card" >
+
+
+    <img src="50.png" alt="logo" width="130" height="80" style="float:left;">
+    <h3 class="w3-bar-item w3-button w3-hover-red"><b>คลังสินค้าวันรวมน้ำใจ</b></h3>
+
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small" >
+        <h4 class="w3-bar-item w3-button w3-hover-red"><a href="home.html">หน้าแรก</h4></a>
+        <h4 class="w3-bar-item w3-button w3-hover-red"><a href="inven.html">คลังสินค้า</a></h4>
+        <div class="w3-dropdown-hover">
+        <h4 class="w3-button w3-hover-red">เบิกสินค้า</h4>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="big.html" class="w3-bar-item w3-button w3-hover-red">รางวัลใหญ่</a>
+          <a href="medium.html" class="w3-bar-item w3-button w3-hover-red">รางวัลกลาง</a>
+          <a href="small.html" class="w3-bar-item w3-button w3-hover-red">รางวัลเล็ก</a>
+              </div>
+        </div>
+        <h4 class="w3-bar-item w3-button w3-hover-red"><a href="user.html">บัญชีผู้ใช้</a></h4>
+
+    </div>
+  </div>
+</div>
+<br> <br><br> <br><br>
+<div class=" w3-center w3-content" >
+  <button type="button" class="w3-button w3-padding-large w3-green w3-round-large"><a href="add.html">เพิ่มสินค้า</a></button>
+</div>
+<br>
+<style>
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+}
+
+td, th {
+    border: 3px solid #ffffff;
+    text-align: center;
+    border-spacing: 10px;
+    padding: 5px center;
+}
+th {
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #f2eded;
+}
+table th {
+    background-color: #f0100b;
+    color: white;
+}
+</style>
+</head>
+<body>
+<br>
+<table align="center">
+
+
+    <th><h4>รหัสสินค้า</h4></th>
+    <th><h4>ชื่อสินค้า</h4></th>
+    <th><h4>ประเภท</h4></th>
+    <th><h4>จำนวน</h4></th>
+    <th><h4>รายละเอียดสินค้า</h4></th>
+    <th><h4>แก้ไข</h4></th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>ตู้เย็น</td>
+    <td>รางวัลใหญ่</td>
+    <td>20</td>
+    <td><button type="button" class="w3-button w3-grey w3-round-large"><a href="detailproduct.html">ข้อมูลสินค้า</a></button></td>
+    <td><button type="button" class="w3-button w3-grey w3-round-large"><a href="edit.html">แก้ไข</a></button></td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>รถยนต์</td>
+    <td>รางวัลใหญ่</td>
+    <td>50</td>
+    <td><button type="button" class="w3-button w3-grey w3-round-large">ข้อมูลสินค้า</button></td>
+    <td><button type="button" class="w3-button w3-grey w3-round-large"">แก้ไข</button></td>
+  </tr>
+  <tr>
+    <td>C</td>
+    <td>ไมโครเวฟ</td>
+    <td>รางวัลใหญ่</td>
+    <td>50</td>
+    <td><button type="button" class="w3-button w3-grey w3-round-large">ข้อมูลสินค้า</button></td>
+    <td><button type="button"class="w3-button w3-grey w3-round-large">แก้ไข</button></td>
+  </tr>
+  <tr>
+    <td>D</td>
+    <td>จักรยาน</td>
+    <td>รางวัลใหญ่</td>
+    <td>50</td>
+    <td><button type="button"class="w3-button w3-grey w3-round-large" >ข้อมูลสินค้า</button></td>
+    <td><button type="button"class="w3-button w3-grey w3-round-large" >แก้ไข</button></td>
+  </tr>
+  <tr>
+    <td>E</td>
+    <td>รถมอเตอร์ไซค์</td>
+    <td>รางวัลใหญ่</td>
+    <td>20</td>
+    <td><button type="button" class="w3-button w3-grey w3-round-large" >ข้อมูลสินค้า</button></td>
+    <td><button type="button" class="w3-button w3-grey w3-round-large" >แก้ไข</button></td>
+  </tr>
+  <tr>
+    <td>a</td>
+    <td>หม้อหุงข้าว</td>
+    <td>รางวัลกลาง</td>
+    <td>50</td>
+    <td><button type="button"class="w3-button w3-grey w3-round-large">ข้อมูลสินค้า</button></td>
+    <td><button type="button"class="w3-button w3-grey w3-round-large" >แก้ไข</button></td>
+  </tr>
+  <tr>
+    <td>ก</td>
+    <td>ผ้าขนหนู</td>
+    <td>รางวัลเล็ก</td>
+    <td>50</td>
+    <td><button type="button" class="w3-button w3-grey w3-round-large">ข้อมูลสินค้า</button></td>
+    <td><button type="button"class="w3-button w3-grey w3-round-large" >แก้ไข</button></td>
+  </tr>
+  
+</table>
+
+
+
+
+
+</body>
+</html>

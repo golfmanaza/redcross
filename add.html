@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0106)file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/add.html -->
+<html lang="en,th"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="icon" href="file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/img/50.png" type="image/png">
+    <style>
+            A:link	{
+            text-decoration:none;
+            }
+            A:visited	{
+            text-decoration:none;
+            }
+            </style>
+
+  <!-- Navbar (sit on top) -->
+  </head><body><div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+
+      <img src="./add_files/50.png" alt="logo" width="130" height="80" style="float:left;"> <br>
+      <h3 href="#home" class="w3-bar-item w3-button w3-hover-red "><b>คลังสินค้าวันรวมน้ำใจ</b></h3>
+
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small">
+            <h4 class="w3-bar-item w3-button w3-hover-red"><a href="home.html">หน้าแรก</h4></a>
+            <h4  class="w3-bar-item w3-button w3-hover-red"><a href="inven.html">คลังสินค้า</h4>
+            <div class="w3-dropdown-hover">
+            <h4 href="#product2" class="w3-button w3-hover-red">เบิกสินค้า</h4>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+                    <a href="big.html" class="w3-bar-item w3-button w3-hover-red">รางวัลใหญ่</a>
+                    <a href="medium.html" class="w3-bar-item w3-button w3-hover-red">รางวัลกลาง</a>
+                    <a href="small.html" class="w3-bar-item w3-button w3-hover-red">รางวัลเล็ก</a>
+                  </div>
+            </div>
+            <h4 class="w3-bar-item w3-button w3-hover-red"><a href="user.html">บัญชีผู้ใช้</a></h4>
+
+      </div>
+    </div>
+  </div>
+
+    <!-- Title Page-->
+    <title>เพิ่มสินค้า</title>
+
+    <!-- Icons font CSS-->
+    <link href="file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="icon" href="file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/img/50.png" type="image/png">
+    <link rel="stylesheet" href="./add_files/w3.css">
+    <!-- Font special for pages-->
+    <link href="./add_files/css" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="./add_files/select2.min.css" rel="stylesheet" media="all">
+    <link href="file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+
+    <!-- Main CSS-->
+    <link href="./add_files/main.css" rel="stylesheet" media="all">
+
+<header class="header_area p-3 mb-2 bg-danger text-Secondary text.">
+  <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a class="navbar-brand logo_h" href="file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/index.html"><img src="file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/img/1.png" alt=""></a>
+        <h3> คลังสินค้าวันรวมน้ำใจ </h3>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <div class="page-wrapper bg-gra-02 p-t-100 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">เพิ่มสินค้า</h2>
+                    <form method="POST">
+                        <div class="row row-space">
+                          <div class="form-row">
+                              <label class="label">ประเภทสินค้า</label>
+                              <div class="value">
+                                  <div class="input-group">
+                                      <div class="rs-select2 js-select-simple select--no-search">
+                                          <select name="subject">
+                                              <option>รางวัลเล็ก</option>
+                                              <option>รางวัลกลาง </option>
+                                              <option>รางวัลใหญ่ </option>
+                                          </select>
+                                          <div class="select-dropdown"></div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-2">
+                              <div class="input-group">
+                                  <label class="label">รหัสสินค้า</label>
+                                  <input class="input--style-4" type="id" name="id_num">
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="row row-space">
+                          <div class="col-2">
+                              <div class="input-group">
+                                  <label class="label">ชื่อสินค้า</label>
+                                  <input class="input--style-4" type="name" name="name">
+                              </div>
+                          </div>
+                          <div class="col-2">
+                              <div class="input-group">
+                                  <label class="label">จำนวนสินค้า</label>
+                                  <input class="input--style-4" type="count" name="count">
+                              </div>
+                          </div>
+                        </div>
+                        <div class="input-group">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ยี่ห้อสินค้า</label>
+                                    <input class="input--style-4" type="name" name="name">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">สี</label>
+                                    <input class="input--style-4" type="name" name="name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ขนาด</label>
+                                    <input class="input--style-4" type="name" name="name">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">รุ่น</label>
+                                    <input class="input--style-4" type="name" name="name">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อองค์กร/บริษัท/ชื่อผูู้บริจาค</label>
+                                    <input class="input--style-4" type="name" name="name">
+                                </div>
+                            </div>
+                        </div>
+                          <div class="row row-space">
+                              <div class="col-2">
+                                  <div class="input-group">
+                                      <label class="label">วันที่สินค้าเข้าสู่ระบบ</label>
+                                      <div class="input-group-icon">
+                                          <input class="input--style-4 js-datepicker" type="date">
+                                          <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                      </div>
+                                  </div>
+                              </div>
+
+                          </div>
+                        </div>
+                        <div class="p-t-15">
+                          <button class="btn btn--radius-2 btn--green" type="submit">ยืนยัน</button>
+                        </div>
+
+                        </form>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+                        <!-- Jquery JS-->
+                        <script src="file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/vendor/jquery/jquery.min.js"></script>
+                        <!-- Vendor JS-->
+                        <script src="./add_files/select2.min.js.download"></script>
+                        <script src="file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/vendor/datepicker/moment.min.js"></script>
+                        <script src="file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/vendor/datepicker/daterangepicker.js"></script>
+
+                        <!-- Main JS-->
+                        <script src="file:///C:/Users/ASUS/Desktop/%E0%B9%82%E0%B8%9B%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%84/New%20folder/js/global.js"></script>
+
+                        
+
+                        
+                        <!-- end document-->
+</body><!-- This templates was made by Colorlib (https://colorlib.com) --></html>

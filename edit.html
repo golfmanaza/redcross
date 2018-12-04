@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en,th">
+<link rel="icon" href="img/50.png" type="image/png">
+<style>
+        A:link	{
+        text-decoration:none;
+        }
+        A:visited	{
+        text-decoration:none;
+        }
+        </style>
+<head>
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card" >
+
+      <img src="50.png" alt="logo" width="130" height="80" style="float:left;"> <br>
+      <h3 href="#home" class="w3-bar-item w3-button"><b>คลังสินค้าวันรวมน้ำใจ</b></h3>
+
+      <!-- Float links to the right. Hide them on small screens -->
+      <div class="w3-right w3-hide-small" >
+            <h4  class="w3-bar-item w3-button w3-hover-red"><a href="home.html">หน้าแรก</h4></a>
+            <h4  class="w3-bar-item w3-button w3-hover-red"><a href ="inven.html">คลังสินค้า</h4></a>
+            <div class="w3-dropdown-hover">
+            <h4  class="w3-button w3-hover-red">เบิกสินค้า</h4>
+            <div class="w3-dropdown-content w3-bar-block w3-border">
+              <a href="big.html" class="w3-bar-item w3-button w3-hover-red">รางวัลใหญ่</a>
+              <a href="medium.html" class="w3-bar-item w3-button w3-hover-red">รางวัลกลาง</a>
+              <a href="small.html" class="w3-bar-item w3-button w3-hover-red">รางวัลเล็ก</a>
+                  </div>
+            </div>
+            <h4  class="w3-bar-item w3-button w3-hover-red"><a href ="user.html">บัญชีผู้ใช้</h4></a>
+
+      </div>
+    </div>
+  </div>
+
+    <!-- Title Page-->
+    <title>แกไขสินค้า</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link rel="icon" href="img/50.png" type="image/png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+<header class="header_area p-3 mb-2 bg-danger text-Secondary text.">
+  <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a class="navbar-brand logo_h" href="index.html"><img src="img/1.png" alt=""></a>
+        <h3> คลังสินค้าวันรวมน้ำใจ </h3>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+      </div>
+    </nav>
+  </div>
+</header>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">แก้ไขสินค้า</h2>
+                    <form method="POST">
+                        <div class="row row-space">
+
+                            <div class="form-row">
+                                <label class="label">ประเภทสินค้า</label>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <div class="rs-select2 js-select-simple select--no-search">
+                                            <select name="subject">
+                                                <option disabled="disabled" selected="selected">รางวัลเล็ก</option>
+                                                <option>รางวัลเล็ก</option>
+                                                <option>รางวัลกลาง </option>
+                                                <option>รางวัลใหญ่ </option>
+                                            </select>
+                                            <div class="select-dropdown"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">รหัสสินค้า</label>
+                                    <input class="input--style-4" type="id" name="id_num">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">ชื่อสินค้า</label>
+                                    <input class="input--style-4" type="name" name="name">
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">จำนวนสินค้า</label>
+                                    <input class="input--style-4" type="count" name="count">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                          <div class="row row-space">
+                              <div class="col-2">
+                                  <div class="input-group">
+                                      <label class="label">ยี่ห้อสินค้า</label>
+                                      <input class="input--style-4" type="name" name="name">
+                                  </div>
+                              </div>
+                              <div class="col-2">
+                                  <div class="input-group">
+                                      <label class="label">สี</label>
+                                      <input class="input--style-4" type="name" name="name">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="row row-space">
+                              <div class="col-2">
+                                  <div class="input-group">
+                                      <label class="label">ขนาด</label>
+                                      <input class="input--style-4" type="name" name="name">
+                                  </div>
+                              </div>
+                              <div class="col-2">
+                                  <div class="input-group">
+                                      <label class="label">รุ่น</label>
+                                      <input class="input--style-4" type="name" name="name">
+                                  </div>
+                              </div>
+                              <div class="col-2">
+                                  <div class="input-group">
+                                      <label class="label">ชื่อองค์กร/บริษัท/ชื่อผูู้บริจาค</label>
+                                      <input class="input--style-4" type="name" name="name">
+                                  </div>
+                              </div>
+                          </div>
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">วันที่สินค้าเข้าสู่ระบบ</label>
+                                        <div class="input-group-icon">
+                                            <input class="input--style-4 js-datepicker" type="date" name="date">
+                                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--green" type="submit">ยืนยัน</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
